@@ -23,8 +23,9 @@ export default function Home() {
         />
 
         {/* Comments */}
-        {comments.map((c) => (
+        {comments.map((c, i) => (
           <Comment
+            key={i + c.username + c.replyText + c.likeNum}
             imgSrc={c.userImagePath}
             userName={c.username}
             status={c.commentText}

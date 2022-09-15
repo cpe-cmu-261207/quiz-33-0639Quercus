@@ -22,8 +22,9 @@ export default function PostOwner(props) {
       <hr className="m-0 border" />
 
       {/* Comments, just in case */}
-      {props.comments.map((c) => (
+      {props.comments.map((c, i) => (
         <Comment
+          key={i + c.username + c.replyText + c.likeNum}
           imgSrc={c.userImagePath}
           userName={c.username}
           status={c.replyText}

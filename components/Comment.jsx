@@ -32,8 +32,9 @@ export default function Comment(props) {
       </div>
 
       {/* Replies */}
-      {props.replies.map((r) => (
+      {props.replies.map((r, i) => (
         <Reply
+          key={i + r.username + r.replyText + r.likeNum}
           imgSrc={r.userImagePath}
           userName={r.username}
           status={r.replyText}
