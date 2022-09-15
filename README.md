@@ -19,4 +19,4 @@ Deploy ไฟล์ที่ build โดยใช้บริการ Static w
 
 ดูวิธีการใช้ **Surge** ใน MS TEAM Channel General
 
-https://codesandbox.io/p/github/cpe-cmu-261207/quiz-33-0639Quercus
+teeny-tiny-quercus.surge.sh
